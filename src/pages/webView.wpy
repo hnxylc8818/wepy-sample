@@ -1,0 +1,28 @@
+<style lang="scss">
+</style>
+<template>
+  <web-view src="https://www.baidu.com"></web-view>
+  <!--<image src="http://acaeva-prd.oss-cn-zhangjiakou.aliyuncs.com/temp/12121/微信图片_20181107103357.jpg"></image>-->
+</template>
+
+<script>
+  import wepy from 'wepy'
+
+  export default class webView extends wepy.page {
+    config = {
+      navigationBarTitleText: '',
+    };
+    components = {};
+
+    data = {};
+
+    methods = {};
+
+    onLoad(options,data) {
+      if (!options.preload){
+        options.preload = data.preload;
+      }
+      this.$wxpage.options = options;
+    }
+  }
+</script>
