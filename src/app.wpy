@@ -39,8 +39,8 @@
       AuthErrorCount:0,
       isReLogin:false,  // 是否是token过期重新登录
       isLogin:false,  // 是否登录成功
-      // BASE_URL:"http://192.168.5.165:9020/acaeva/", // 测试
-      BASE_URL:"http://admin-demo.zhiyu365.cn/acaeva/", // 生产
+      // BASE_URL:"http://192.168.5.165:9020/test/", // 测试
+      BASE_URL:"http://192.168.1.198:9020/product/", // 生产
     };
 
     constructor() {
